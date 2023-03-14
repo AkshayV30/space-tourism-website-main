@@ -1,0 +1,15 @@
+@import "../abstract/variables";
+@import "../base/typography";
+
+.crew-picture {
+  background-image: url(../img/crew/background-crew-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  //   background: url(../img/home/background-home-desktop.jpg) no-repeat;
+
+  position: relative;
+
+  height: 100vh;
+}

@@ -184,3 +184,11 @@ body {
     .mini-nav .mini-sub-text ul :nth-child(2) {
       color: #fff;
       font-family: "Bellefair", serif; }
+
+.crew-picture {
+  background-image: url(../img/crew/background-crew-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh; }
