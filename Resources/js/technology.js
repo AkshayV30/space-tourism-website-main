@@ -26,7 +26,7 @@ navNumbers.addEventListener("click", (e) => {
 
   if (!targetNumber) return;
 
-  console.log(targetNumber);
+  //   console.log(targetNumber);
 
   //   changing number actvity
   currentNumber.classList.remove("active-number");
@@ -39,7 +39,7 @@ navNumbers.addEventListener("click", (e) => {
   currentDescription.classList.remove("active-txt");
   targetDescription.classList.add("active-txt");
 
-  console.log(targetIndex);
+  //   console.log(targetIndex);
 
   // changing images
   const targetImage = technologyImg[targetIndex];
