@@ -278,50 +278,57 @@ body {
   width: 80%;
   padding: 10%; }
 
-.nav-numbers .btn {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff; }
-
-.nav-numbers .active-btn {
-  background-color: white;
-  border: 0;
-  color: black; }
-
 .technology-sub-container {
   display: grid;
-  grid-template-columns: 1fr 3fr; }
-  .technology-sub-container .nav-numbers {
-    position: absolute;
-    top: 35%;
-    left: 10%;
-    grid-column: -1 / 2;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px; }
+  grid-template-columns: 0.5fr 4fr 3.5fr;
+  align-items: center;
+  width: 100%;
+  position: relative; }
   .technology-sub-container .technology-description {
-    grid-column: 2 / 3; }
+    grid-column: 2 / 3;
+    padding: 45px; }
+  .technology-sub-container .technology-images {
+    grid-column: 3 / -1;
+    width: 100%;
+    position: absolute;
+    right: -10%; }
 
-.technology-description .technology-sub {
-  justify-content: space-between;
-  display: none; }
+.nav-numbers .btn-number {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-family: "Bellefair", serif;
+  font-size: 32px; }
 
-.technology-description .active-sub {
-  display: flex; }
+.nav-numbers .active-number {
+  background-color: white;
+  border: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px; }
 
-.technology-sub .technology-text h1 {
+.technology-description .technology-text {
+  display: none;
+  width: 100%; }
+
+.technology-description .active-txt {
+  display: flex;
+  flex-direction: column; }
+
+.technology-description .technology-text h1 {
   font-family: "Bellefair", serif;
   color: #fff;
   font-size: 56px;
   font-weight: 400;
   text-transform: uppercase; }
 
-.technology-sub .technology-text h3 {
+.technology-description .technology-text h3 {
   color: #707070;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 28px;
@@ -329,12 +336,21 @@ body {
   text-transform: uppercase;
   padding: 15px 0; }
 
-.technology-sub .technology-text p {
+.technology-description .technology-text p {
   font-family: "Barlow Condensed", sans-serif;
   color: #d0d6f9;
   font-size: 16px;
   max-width: 44ch;
   padding: 25px 0; }
 
-.technology-sub .technology-txt-img {
-  object-fit: cover; }
+.technology-description .technology-txt-img {
+  position: absolute;
+  right: -15%; }
+  .technology-description .technology-txt-img picture img {
+    object-fit: cover; }
+
+.technology-images .technology-img {
+  display: none; }
+
+.technology-images .active-img {
+  display: flex; }
